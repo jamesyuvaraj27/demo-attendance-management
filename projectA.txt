@@ -1,0 +1,32 @@
+Project-A Structure
+1. User Authentication (Faculty Login):
+faculty login page-based authentication.
+Redirect faculty to their dashboard after login.
+2. Faculty Dashboard:
+Faculty Profile (Name, Subject,dept,timetable,date)
+submit
+Redirect faculty to their student atendance dashbard after login.
+3.student atendance dashbard:
+faculty(name,subject,branch,hour)
+List of Students
+Mark Attendance option with:
+Default Present for all students.
+mark the absenties in the page
+Submit Button (Triggers confirmation popup: "Successfully submitted attendance.").
+Redirect faculty to next dashboard after submit.
+4.successfully submited:
+Edit icon to edit Absenties.
+no of presenties and absenties
+Attendance History & Edit Option (Faculty can modify records).
+
+sources need
+1. Frontend (HTML, CSS, JavaScript)
+Faculty Login Page: Simple form with username/password.
+Dashboard: List students, auto-mark them present, allow absentee marking.
+Popup Message: Show confirmation on attendance submission.
+Modify Attendance Page: Allow faculty to edit attendance records.
+2. Backend (Node.js with Express or PHP)
+Faculty login & authentication.
+Fetching faculty data (name, subject,dept, students).
+Submitting attendance.
+Fetching & modifying attendance records.

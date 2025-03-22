@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('m1.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            box-shadow:
+0 0 20px cyan ;
+        }
+        h2{
+            margin-top: -30px;
+        }
+        img{
+           height: 200px;
+           width: 200px;
+           border-radius: 50%;
+           box-shadow: 0 0 20px aqua;
+        }
+        .timetable {
+            margin-top: 15px;
+            border-collapse: collapse;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(5px);
+        }
+        .timetable th, .timetable td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 1000px;
+            margin-top: -20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .timetable a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .timetable a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="flog.html" class="back-button">Back</a>
+        <h2>Faculty login</h2>
+        <div class="profile-pic">
+            <img src="m1.jpg">
+        </div>
+        <p><strong>Name:</strong></p>
+        <p><strong>Subject:</strong><SELECT border="5px">SUBJECTS
+            <OPTION>DBMS</OPTION>
+            <OPTION>DLCO</OPTION>
+            <OPTION>P&S</OPTION>
+            <OPTION>ML</OPTION>
+            <OPTION>OT</OPTION>
+            <OPTION>SE</OPTION>
+            <OPTION>OS</OPTION>
+            <OPTION>DBMS LAB</OPTION>
+            <OPTION>ML LAB</OPTION>
+        </SELECT></p>
+        <p><strong>department:</strong><SELECT>
+            <OPTION>cse</OPTION>
+            <OPTION>it</OPTION>
+            <OPTION>ece</OPTION>
+            <OPTION>eee</OPTION>
+            <OPTION>mechanical</OPTION>
+            <OPTION>civil</OPTION>
+        </SELECT></p>
+
+
+        <table class="timetable">
+            <tr>
+                <th>Time/Date</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>9-10 AM</td>
+                <td><a href="alist.html">CSM</a></td>
+            </tr>
+            <tr>
+                <td>10-11AM</td>
+                <td><a href="alist2.html">AI & ML</a></td>
+            </tr>
+            <tr>
+                <td>11.15-12-15PM</td>
+                <td><a href="alist3.html">DS</a></td>
+            </tr>
+            <tr>
+                <td>12-15-1.15PM</td>
+                <td><a href="#">CAI</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

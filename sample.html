@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance App</title>
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .faculty-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .faculty-info img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background: #ff4d4d;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #cc0000;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(odd) {
+            background: rgba(255, 0, 0, 0.6);
+        }
+        tr:nth-child(even) {
+            background: rgba(0, 0, 255, 0.6);
+        }
+        tr:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+        .submit-btn {
+            margin-top: 20px;
+            padding: 10px;
+            background: #4CAF50;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <button class="back-btn">Back</button>
+    <div class="container">
+        <div class="faculty-info">
+            <img src="m1.jpg" alt="Faculty Image">
+            <div>
+                <h2>Faculty Name</h2>
+                <p>Subject: Artificial Intelligence</p>
+                <p>Branch: CSE</p>
+            </div>
+        </div>
+        <h1>Attendance App</h1>
+        <p id="date"></p>
+        <table>
+            <tr>
+                <th>S.No</th>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Present</th>
+            </tr>
+            <script>
+                let students = [
+                    { roll: 'CSB21001', name: 'Emily Johnson' },
+                    { roll: 'CSB21002', name: 'Michael Smith' },
+                    { roll: 'CSB21003', name: 'Sarah Martinez' },
+                    { roll: 'CSB21004', name: 'David Brown' },
+                    { roll: 'CSB21005', name: 'Olivia Williams' },
+                    { roll: 'CSB21006', name: 'Christopher Davis' },
+                    { roll: 'CSB21007', name: 'Sophia Wilson' },
+                    { roll: 'CSB21008', name: 'Ethan Anderson' },
+                    { roll: 'CSB21009', name: 'Emma Miller' },
+                    { roll: 'CSB21010', name: 'James Jones' }
+                ];
+                students.forEach((student, index) => {
+                    document.write(`
+                        <tr>
+                            <td>${index + 1}</td>
+                            <td>${student.roll}</td>
+                            <td>${student.name}</td>
+                            <td><input type="checkbox" checked></td>
+                        </tr>
+                    `);
+                });
+            </script>
+        </table>
+        <button class="submit-btn">Submit</button>
+    </div>
+    <script>
+        document.getElementById("date").innerText = "Date: " + new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Submission</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url('m1.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            height: 40%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .status {
+            background: rgba(0, 255, 0, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .info {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .edit {
+            background:  #1e1ed0;
+            color: white;
+        }
+
+        .logout{
+            background: #1e1ed0;
+            color: white;
+        }
+
+        /* Hover Effects */
+        .edit:hover {
+            background: #112aa9;
+            transform: scale(1.05);
+        }
+
+        .logout:hover {
+            background: #112aa9;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.55);
+        }
+        a{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Attendance Submission</h2>
+        <div class="status">Successfully Submitted ✅</div>
+        <div class="info">Number of Students: <b></b></div>
+        <div class="info">Number of Absentees: <b></b></div>
+        <div class="buttons">
+            <button class="logout"><a href="flog.html">logout</a></button>
+            <button class="edit"><a href="alist.html">Edit</a></button>
+        </div>
+    </div>
+</body>
+</html>

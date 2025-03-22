@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Page</title>
+    <link rel="stylesheet" href="alist.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-button"><a href="s.html">Back</a></button>
+        
+        <h1>Attendance Sheet</h1>
+        
+        <div class="faculty-profile">
+            <div class="profile-circle">
+                <img src="1.jpg" alt="Faculty Profile">
+            </div>
+            <div class="faculty-info">
+                <h2>Dr. John Doe</h2>
+                <p>Subject: Computer Science</p>
+                <p>Department: Engineering</p>
+                <p>Branch: Computer Engineering</p>
+                <p id="date"></p>
+            </div>
+        </div>
+
+        <form id="attendance-form">
+            <div class="attendance-list">
+                <h3>Students</h3>
+                <ul>
+                    <li class="even">
+                        <input type="checkbox" id="roll1" name="roll1" checked>
+                        <label for="roll1">Roll No: 1201 - BHUMI</label>
+                    </li>
+                    <li class="odd">
+                        <input type="checkbox" id="roll2" name="roll2" checked>
+                        <label for="roll2">Roll No: 1202 - GAYATHRI</label>
+                    </li>
+                    <li class="even">
+                        <input type="checkbox" id="roll3" name="roll3" checked>
+                        <label for="roll3">Roll No: 1203 - RAMESH</label>
+                    </li>
+                    <li class="odd">
+                        <input type="checkbox" id="roll4" name="roll4" checked>
+                        <label for="roll4">Roll No: 1204 - ABDULLAH</label>
+                    </li>
+                    <li class="even">
+                        <input type="checkbox" id="roll5" name="roll5" checked>
+                        <label for="roll5">Roll No: 1205 - PRIYA</label>
+                    </li>
+                    <li class="odd">
+                        <input type="checkbox" id="roll6" name="roll6" checked>
+                        <label for="roll6">Roll No: 1206 - FAREEN</label>
+                    </li>
+                    <li class="even">
+                        <input type="checkbox" id="roll7" name="roll7" checked>
+                        <label for="roll7">Roll No: 1207 - DEVARAJU</label>
+                    </li>
+                    <li class="odd">
+                        <input type="checkbox" id="roll8" name="roll8" checked>
+                        <label for="roll8">Roll No: 1208 - SURESH </label>
+                    </li>
+                    <li class="even">
+                        <input type="checkbox" id="roll9" name="roll9" checked>
+                        <label for="roll9">Roll No: 1209 - SAI </LABEL>
+                    </li>
+                    <li class="odd">
+                        <input type="checkbox" id="roll10" name="roll10" checked>
+                        <label for="roll10">Roll No: 1210 - PREETI</label>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="submit" class="submit-button"><a href="f.html">Submit Attendance</a></button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("date").innerText = "Date: " + new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

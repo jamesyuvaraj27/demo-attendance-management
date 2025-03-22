@@ -1,0 +1,168 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('m1.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    position: relative;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px aqua;
+    backdrop-filter: blur(5px); /* Blur effect */
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+a{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.faculty-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-circle {
+    width: 100px;
+            height: 100px;
+            border-radius: 50px;
+}
+
+.profile-circle img {
+    width: 150px;
+    height: 150px;
+    padding-left: 50px;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+
+.faculty-info {
+    flex-grow: 1;
+    padding-left: 150px;
+}
+
+.attendance-list {
+    margin-bottom: 20px;
+}
+
+.attendance-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.attendance-list li {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+.attendance-list li.even {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.attendance-list li.odd {
+    background-color: rgba(220, 220, 220, 0.8);
+}
+
+.attendance-list li:hover {
+    background-color: rgba(100, 150, 250, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.date-period {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.date-period label {
+    margin-right: 10px;
+}
+
+input[type="date"],
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 48%; /* Responsive width */
+}
+
+button.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+label{
+    justify-content: space-around;
+    word-spacing: 50px;
+}
+
+button.submit-button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .faculty-profile {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .profile-circle {
+        margin-bottom: 10px;
+    }
+
+    .date-period {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date-period label {
+        margin-bottom: 5px;
+    }
+
+    input[type="date"],
+    input[type="text"] {
+        width: 100%; /* Full width on small screens */
+    }
+}
